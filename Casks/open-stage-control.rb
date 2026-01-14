@@ -6,6 +6,6 @@ cask 'open-stage-control' do
   name 'Open Stage Control'
   homepage 'https://openstagecontrol.ammd.net/'
 
-  app 'open-stage-control.app'
+  app 'open-stage-control-darwin-arm64/open-stage-control.app'
 
 end
