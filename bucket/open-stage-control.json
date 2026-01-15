@@ -5,9 +5,9 @@
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://openstagecontrol.ammd.net/packages/open-stage-control_$version_win32-x64.zip",
+            "url": "https://openstagecontrol.ammd.net/packages/open-stage-control_1.30.1_win32-x64.zip",
             "hash": "",
-            "extract_dir": "open-stage-control_$version_win32-x64"
+            "extract_dir": "open-stage-control_1.30.1_win32-x64"
         }
     },
     "bin": [
