@@ -1,0 +1,43 @@
+{
+  "version": "2.0.3",
+  "description": "DSH Desktop — a community-maintained desktop app that turns DeepSeek Harness into a ready-to-use local desktop client for Windows and macOS. Not an official DeepSeek product.",
+  "homepage": "https://dshdesktop.cn",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/anywhere-labs/dsh-desktop/releases/download/v2.0.3/DSH-Desktop-2.0.3-x64-Setup.exe",
+      "hash": "09544950161b85c7c25a961cbb31eb3b607d58966a85a28d152f1f9673daacdd",
+      "installer": {
+        "args": [
+          "/S",
+          "/D=$dir"
+        ]
+      }
+    }
+  },
+  "shortcuts": [
+    [
+      "DSH Desktop.exe",
+      "DSH Desktop"
+    ]
+  ],
+  "uninstaller": {
+    "file": "Uninstall DSH Desktop.exe",
+    "args": [
+      "/S"
+    ]
+  },
+  "notes": "DSH Desktop is community-maintained and not an official DeepSeek product. It bundles its own Node.js / DSH CLI / pnpm runtime, so no global PATH changes are required. User data lives in %APPDATA%\\DSH Desktop.",
+  "checkver": {
+    "github": "https://github.com/anywhere-labs/dsh-desktop/releases",
+    "regex": "v([\\d.]+)",
+    "replace": "$1"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/anywhere-labs/dsh-desktop/releases/download/v$version/DSH-Desktop-$version-x64-Setup.exe"
+      }
+    }
+  }
+}
