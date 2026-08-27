@@ -7,7 +7,6 @@ cask "dsh-desktop" do
   name "DSH Desktop"
   desc "Desktop app for DeepSeek Harness (community-maintained, not an official DeepSeek product)"
   homepage "https://dshdesktop.cn"
-  license "MIT"
 
   livecheck do
     url "https://api.github.com/repos/anywhere-labs/dsh-desktop/releases/latest"
