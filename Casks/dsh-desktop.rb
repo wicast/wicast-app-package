@@ -1,6 +1,6 @@
 cask "dsh-desktop" do
-  version "2.0.3"
-  sha256 "9a5d4a51689baa7c24be7f11903f0ba9cfe4885a3241e573a1cc4134cd500329"
+  version "2.0.5"
+  sha256 "3ab20c4d05c23ce08af5c6d5c8944eac24555278c9673a650d31603a57abd9b9"
 
   url "https://github.com/anywhere-labs/dsh-desktop/releases/download/v#{version}/DSH.Desktop-#{version}-universal.dmg",
       verified: "github.com/anywhere-labs/dsh-desktop/"

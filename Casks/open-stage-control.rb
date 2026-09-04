@@ -1,5 +1,5 @@
 cask 'open-stage-control' do
-  version '1.30.1'
+  version "1.31.1"
   sha256 :no_check
 
   url "https://openstagecontrol.ammd.net/packages/open-stage-control_#{version}_osx-arm64.zip"
@@ -7,10 +7,8 @@ cask 'open-stage-control' do
   homepage 'https://openstagecontrol.ammd.net/'
 
   livecheck do
-    url 'https://framagit.org/api/v4/projects/jean-emmanuel%2Fopen-stage-control/releases'
-    strategy :json do |json|
-      json.first['tag_name']&.delete_prefix('v')
-    end
+    url 'https://openstagecontrol.ammd.net/download/'
+    regex(/open-stage-control[._-]v?(\d+(?:\.\d+)+)[._-]osx/i)
   end
 
   app 'open-stage-control-darwin-arm64/open-stage-control.app'
