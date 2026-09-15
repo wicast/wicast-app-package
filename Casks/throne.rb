@@ -5,8 +5,7 @@ cask "throne" do
   sha256 arm: "ef9fb2209088701e4926d3520712c6b6f737b81d8b6c40e139b7a913840f48eb",
          intel: "09dc2b830d0967bd7dfb6028c6ed513ac82ed1aaf0082f4b2b5ec326b8636f8a"
 
-  url "https://github.com/throneproj/Throne/releases/download/#{version}/Throne-#{version}-macos-#{arch}.zip",
-      verified: "github.com/throneproj/Throne/"
+  url "https://github.com/throneproj/Throne/releases/download/#{version}/Throne-#{version}-macos-#{arch}.zip"
   name "Throne"
   desc "Cross-platform GUI proxy utility (powered by sing-box)"
   homepage "https://github.com/throneproj/Throne"
