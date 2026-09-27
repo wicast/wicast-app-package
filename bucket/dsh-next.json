@@ -1,0 +1,39 @@
+{
+    "version": "2.0.15-next",
+    "description": "DSH NEXT — a community-maintained desktop app that turns DeepSeek Harness into a ready-to-use local desktop client for Windows and macOS. Not an official DeepSeek product.",
+    "homepage": "https://dshdesktop.cn",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/anywhere-labs/dsh-desktop/releases/download/v2.0.15-next/DSH-NEXT-2.0.15-next-x64-Setup.exe",
+            "hash": "b9d4e9100cc705ea6fde0a2e015bcac08103578553120c2261bb65fdd172db8b",
+            "installer": {
+                "args": [
+                    "/S",
+                    "/D=$dir"
+                ]
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "DSH NEXT.exe",
+            "DSH NEXT"
+        ]
+    ],
+    "uninstaller": {
+        "file": "Uninstall DSH NEXT.exe",
+        "args": "/S"
+    },
+    "notes": "DSH NEXT is community-maintained and not an official DeepSeek product. It bundles its own Node.js / DSH CLI / pnpm runtime, so no global PATH changes are required. User data lives in %APPDATA%\\DSH NEXT.",
+    "checkver": {
+        "github": "https://github.com/anywhere-labs/dsh-desktop"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/anywhere-labs/dsh-desktop/releases/download/v$version/DSH-NEXT-$version-x64-Setup.exe"
+            }
+        }
+    }
+}
